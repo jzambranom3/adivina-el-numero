@@ -1,0 +1,15 @@
+import random
+def run():
+    num_aleatorio = random.randint(1, 100)
+    num_ingresado = int(input('Elige un numero entre el 1 al 100: '))
+
+    while num_ingresado != num_aleatorio:
+        pass
+        if num_ingresado < num_aleatorio:
+            print('Piensa en un número más grande')
+        else: 
+            print('Piensa en un número más pequeño')
+        num_ingresado = int(input('Elige otro numero: '))
+    print('¡Ganaste!')
+if __name__ == '__main__':
+    run()
